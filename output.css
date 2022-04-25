@@ -1,0 +1,218 @@
+.app {
+  height: 100vh;
+  overflow-x: hidden; }
+  .app .topbar {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease; }
+    .app .topbar .wrapper {
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 200px; }
+      .app .topbar .wrapper .left {
+        display: flex;
+        align-items: center; }
+        .app .topbar .wrapper .left img {
+          width: 30%; }
+        .app .topbar .wrapper .left .itemContainer {
+          display: flex;
+          align-items: center;
+          margin-left: 30px; }
+      .app .topbar .wrapper .right {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        margin-right: 200px; }
+        .app .topbar .wrapper .right h2 {
+          overflow: hidden;
+          height: 24px;
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          cursor: pointer; }
+  .app .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; }
+    .app .sections::-webkit-scrollbar {
+      display: none; }
+    .app .sections > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start; }
+  .app .intro {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    justify-content: center; }
+    .app .intro .left {
+      flex: 0.5;
+      overflow: hidden;
+      width: 100%;
+      height: 100%; }
+      .app .intro .left .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(11%, 10rem); }
+        .app .intro .left .wrapper h2 {
+          font-family: "arial";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 67px;
+          background: linear-gradient(#1df2dc, #0045b5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent; }
+        .app .intro .left .wrapper img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer; }
+    .app .intro .center {
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      width: 41%;
+      left: 9%;
+      top: 31%;
+      padding-bottom: 12px;
+      padding-right: 100px;
+      padding-top: 60px; }
+      .app .intro .center h1 {
+        overflow: hidden;
+        font-family: "arial";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        padding-bottom: 1%; }
+    .app .intro .right {
+      overflow: hidden;
+      flex: 0.5;
+      position: relative; }
+      .app .intro .right .imgContainer {
+        width: 910px;
+        height: 808px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        float: right; }
+        .app .intro .right .imgContainer img {
+          position: absolute;
+          top: 15%;
+          width: 100%;
+          height: auto;
+          right: 0; }
+  .app .sectionOne {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000; }
+    .app .sectionOne .left {
+      flex: 0.5;
+      overflow: hidden; }
+      .app .sectionOne .left .container {
+        margin: 5%;
+        margin-left: 130px;
+        margin-top: 17%; }
+      .app .sectionOne .left h2 {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 100%;
+        margin-bottom: 7%;
+        padding-bottom: 3%; }
+      .app .sectionOne .left img {
+        width: 550px;
+        height: 260px; }
+    .app .sectionOne .right {
+      overflow: hidden;
+      flex: 0.5; }
+      .app .sectionOne .right .container {
+        margin: 5%;
+        margin-right: 130px; }
+      .app .sectionOne .right img {
+        width: 710px;
+        height: 460px; }
+      .app .sectionOne .right h2 {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 16px;
+        margin-bottom: 40px; }
+  .app .sectionTwo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc; }
+    .app .sectionTwo img {
+      width: 100%;
+      height: 100%; }
+    .app .sectionTwo .container {
+      position: absolute;
+      background-color: black;
+      color: white;
+      width: 40%;
+      padding: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      left: 8%; }
+      .app .sectionTwo .container h2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%; }
+  .app .sectionThree {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831; }
+  .app .sectionFour {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc; }
+  .app .sectionFive {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831; }
+  .app .sectionSix {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc; }
+
+/*# sourceMappingURL=output.css.map */

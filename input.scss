@@ -1,0 +1,292 @@
+.app {
+  height: 100vh;
+  overflow-x: hidden;
+
+  .topbar {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper {
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 200px;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 30%;
+        }
+
+        .itemContainer {
+          display: flex;
+          align-items: center;
+          margin-left: 30px;
+        }
+      }
+
+      .right {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        margin-right: 200px;
+
+        h2 {
+          overflow: hidden;
+          height: 24px;
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
+
+  .intro {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+
+    .left {
+      flex: 0.5;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(11%, 10rem);
+
+        h2 {
+          font-family: "arial";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 67px;
+
+          background: linear-gradient(#1df2dc, #0045b5);
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .center {
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      width: 41%;
+      left: 9%;
+      top: 31%;
+      padding-bottom: 12px;
+      padding-right: 100px;
+      padding-top: 60px;
+
+      h1 {
+        overflow: hidden;
+        font-family: "arial";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        padding-bottom: 1%;
+      }
+    }
+
+    .right {
+      overflow: hidden;
+      flex: 0.5;
+      position: relative;
+
+      .imgContainer {
+        width: 910px;
+        height: 808px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        float: right;
+
+        img {
+          position: absolute;
+          top: 15%;
+          width: 100%;
+          height: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .sectionOne {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+
+    .left {
+      flex: 0.5;
+      overflow: hidden;
+
+      .container {
+        margin: 5%;
+        margin-left: 130px;
+        margin-top: 17%;
+      }
+
+      h2 {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 100%;
+        margin-bottom: 7%;
+        padding-bottom: 3%;
+      }
+
+      img {
+        width: 550px;
+        height: 260px;
+      }
+    }
+
+    .right {
+      overflow: hidden;
+      flex: 0.5;
+
+      .container {
+        margin: 5%;
+        margin-right: 130px;
+      }
+
+      img {
+        width: 710px;
+        height: 460px;
+      }
+
+      h2 {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .sectionTwo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      position: absolute;
+      background-color: black;
+      color: white;
+      width: 40%;
+      padding: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      left: 8%;
+
+      h2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .sectionThree {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831;
+  }
+
+  .sectionFour {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc;
+  }
+
+  .sectionFive {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831;
+  }
+
+  .sectionSix {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc;
+  }
+}
