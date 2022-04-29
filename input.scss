@@ -271,7 +271,7 @@
       img {
         width: 85%;
         height: 100%;
-        margin-left: 10%;
+        margin-left: 7%;
       }
     }
     .right {
@@ -308,6 +308,25 @@
     .left {
       overflow: hidden;
       flex: 0.4;
+
+      h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 17px;
+        line-height: 150%;
+      }
     }
     .right {
       overflow: hidden;
@@ -332,11 +351,40 @@
 
     .left {
       overflow: hidden;
-      flex: 0.5;
+      flex: 1.2;
+      width: 100%;
+      height: 100%;
+
+      img {
+        padding-left: 5%;
+        height: 70%;
+        width: 90%;
+        margin-top: 10%;
+      }
     }
     .right {
       overflow: hidden;
       flex: 0.5;
+
+      h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        padding-left: 0%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 300;
+        padding-left: 0%;
+        padding-right: 25%;
+        font-size: 17px;
+        line-height: 150%;
+      }
     }
   }
 

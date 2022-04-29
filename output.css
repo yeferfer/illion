@@ -202,7 +202,7 @@
       .app .sectionThree .left img {
         width: 85%;
         height: 100%;
-        margin-left: 10%; }
+        margin-left: 7%; }
     .app .sectionThree .right {
       overflow: hidden;
       flex: 0.5; }
@@ -229,6 +229,21 @@
     .app .sectionFour .left {
       overflow: hidden;
       flex: 0.4; }
+      .app .sectionFour .left h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%; }
+      .app .sectionFour .left p {
+        font-style: normal;
+        font-weight: 300;
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 17px;
+        line-height: 150%; }
     .app .sectionFour .right {
       overflow: hidden;
       flex: 0.8;
@@ -246,10 +261,33 @@
     background-color: white; }
     .app .sectionFive .left {
       overflow: hidden;
-      flex: 0.5; }
+      flex: 1.2;
+      width: 100%;
+      height: 100%; }
+      .app .sectionFive .left img {
+        padding-left: 5%;
+        height: 70%;
+        width: 90%;
+        margin-top: 10%; }
     .app .sectionFive .right {
       overflow: hidden;
       flex: 0.5; }
+      .app .sectionFive .right h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        padding-left: 0%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%; }
+      .app .sectionFive .right p {
+        font-style: normal;
+        font-weight: 300;
+        padding-left: 0%;
+        padding-right: 25%;
+        font-size: 17px;
+        line-height: 150%; }
   .app .sectionSix {
     overflow: hidden;
     display: flex;
