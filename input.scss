@@ -391,8 +391,157 @@
   .sectionSix {
     overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     background-color: #bdbcbc;
+    color: white;
+
+    img {
+      height: inherit;
+      width: inherit;
+    }
+    .container {
+      display: contents;
+
+      .left {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex: 0.5;
+        position: absolute;
+        color: white;
+
+        h1 {
+          transform: translate(3rem, 4rem);
+          position: absolute;
+          font-style: normal;
+          width: 55%;
+          overflow: hidden;
+          font-size: 70px;
+          font-weight: 300;
+          line-height: 100%;
+        }
+      }
+
+      .center {
+        height: 100%;
+        width: 100%;
+        color: white;
+        position: absolute;
+
+        p {
+          transform: translate(32rem, 20rem);
+          font-size: 25px;
+          width: 30%;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 130%;
+        }
+      }
+
+      .right {
+        flex: 0.5;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: white;
+
+        p {
+          transform: translate(57rem, 33rem);
+          width: 35%;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+
+  .sectionSeven {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+
+    h1 {
+      overflow: hidden;
+      padding: 2%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 100%;
+    }
+
+    .container {
+      flex-direction: row;
+      display: flex;
+
+      .left {
+        flex: 0.5;
+        width: 100%;
+        height: 100%;
+
+        p {
+          font-style: normal;
+          font-weight: 300;
+          padding-left: 19%;
+          width: 75%;
+          font-size: 20px;
+          padding-bottom: 20px;
+          line-height: 130%;
+        }
+
+        img {
+          height: 67%;
+          width: 72%;
+          margin-left: 19%;
+        }
+      }
+      .rigth {
+        width: 100%;
+        height: 100%;
+        flex: 0.5;
+
+        p {
+          font-style: normal;
+          font-weight: 300;
+          padding-left: 3%;
+          width: 78%;
+          font-size: 20px;
+          padding-bottom: 20px;
+          line-height: 130%;
+        }
+
+        img {
+          margin-left: 3%;
+          height: 76.5%;
+          width: 78%;
+        }
+      }
+    }
+    .containerTextDown {
+      color: white;
+      background-color: #000000;
+      overflow: hidden;
+      transform: translate(0px, -30%);
+      padding: 8px;
+      width: 80%;
+      height: 7%;
+
+      h2 {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+
+  .sectionEight {
+    background-color: #000000;
   }
 }
