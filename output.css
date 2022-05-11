@@ -1,0 +1,478 @@
+.app {
+  height: 100vh;
+  overflow-x: hidden; }
+  .app .topbar {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease; }
+    .app .topbar .wrapper {
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 200px; }
+      .app .topbar .wrapper .left {
+        display: flex;
+        align-items: center; }
+        .app .topbar .wrapper .left img {
+          width: 30%; }
+        .app .topbar .wrapper .left .itemContainer {
+          display: flex;
+          align-items: center;
+          margin-left: 30px; }
+      .app .topbar .wrapper .right {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        margin-right: 200px; }
+        .app .topbar .wrapper .right h2 {
+          overflow: hidden;
+          height: 24px;
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          cursor: pointer; }
+  .app .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; }
+    .app .sections::-webkit-scrollbar {
+      display: none; }
+    .app .sections > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start; }
+  .app .intro {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    justify-content: center; }
+    .app .intro .left {
+      flex: 0.5;
+      overflow: hidden;
+      width: 100%;
+      height: 100%; }
+      .app .intro .left .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(11%, 10rem); }
+        .app .intro .left .wrapper h2 {
+          font-family: "arial";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 67px;
+          background: linear-gradient(#1df2dc, #0045b5);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent; }
+        .app .intro .left .wrapper img {
+          width: 30px;
+          height: 30px;
+          cursor: pointer; }
+    .app .intro .center {
+      position: absolute;
+      z-index: 2;
+      background-color: white;
+      width: 41%;
+      left: 9%;
+      top: 31%;
+      padding-bottom: 12px;
+      padding-right: 100px;
+      padding-top: 60px; }
+      .app .intro .center h1 {
+        overflow: hidden;
+        font-family: "arial";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        padding-bottom: 1%; }
+    .app .intro .right {
+      overflow: hidden;
+      flex: 0.5;
+      position: relative; }
+      .app .intro .right .imgContainer {
+        width: 910px;
+        height: 808px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        float: right; }
+        .app .intro .right .imgContainer img {
+          position: absolute;
+          top: 15%;
+          width: 100%;
+          height: auto;
+          right: 0; }
+  .app .sectionOne {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000; }
+    .app .sectionOne .left {
+      flex: 0.5;
+      overflow: hidden; }
+      .app .sectionOne .left .container {
+        margin: 5%;
+        margin-left: 130px;
+        margin-top: 17%; }
+      .app .sectionOne .left p {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 100%;
+        margin-bottom: 7%;
+        padding-bottom: 3%; }
+      .app .sectionOne .left img {
+        width: 550px;
+        height: 260px; }
+    .app .sectionOne .right {
+      overflow: hidden;
+      flex: 0.5; }
+      .app .sectionOne .right .container {
+        margin: 5%;
+        margin-right: 130px; }
+      .app .sectionOne .right img {
+        width: 710px;
+        height: 460px; }
+      .app .sectionOne .right p {
+        overflow: hidden;
+        color: white;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 16px;
+        margin-bottom: 40px; }
+  .app .sectionTwo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbcbc; }
+    .app .sectionTwo img {
+      width: 100%;
+      height: 100%; }
+    .app .sectionTwo .container {
+      position: absolute;
+      background-color: black;
+      color: white;
+      width: 40%;
+      padding: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      left: 8%; }
+      .app .sectionTwo .container p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%; }
+  .app .sectionThree {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white; }
+    .app .sectionThree .left {
+      overflow: hidden;
+      flex: 0.5; }
+      .app .sectionThree .left img {
+        width: 85%;
+        height: 100%;
+        margin-left: 7%; }
+    .app .sectionThree .right {
+      overflow: hidden;
+      flex: 0.5; }
+      .app .sectionThree .right h1 {
+        width: 90%;
+        overflow: hidden;
+        font-style: normal;
+        font-size: 77px;
+        font-weight: 300;
+        margin-bottom: 21%;
+        line-height: 100%; }
+      .app .sectionThree .right p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        width: 90%;
+        line-height: 130%; }
+  .app .sectionFour {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white; }
+    .app .sectionFour .left {
+      overflow: hidden;
+      flex: 0.4; }
+      .app .sectionFour .left h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%; }
+      .app .sectionFour .left p {
+        font-style: normal;
+        font-weight: 300;
+        padding-right: 10%;
+        padding-left: 10%;
+        font-size: 17px;
+        line-height: 150%; }
+    .app .sectionFour .right {
+      overflow: hidden;
+      flex: 0.8;
+      width: 100%;
+      height: 100%; }
+      .app .sectionFour .right img {
+        height: 70%;
+        width: 90%;
+        margin-top: 10%; }
+  .app .sectionFive {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white; }
+    .app .sectionFive .left {
+      overflow: hidden;
+      flex: 1.2;
+      width: 100%;
+      height: 100%; }
+      .app .sectionFive .left img {
+        padding-left: 5%;
+        height: 70%;
+        width: 90%;
+        margin-top: 10%; }
+    .app .sectionFive .right {
+      overflow: hidden;
+      flex: 0.5; }
+      .app .sectionFive .right h2 {
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10%;
+        padding-left: 0%;
+        width: 90%;
+        font-size: 45px;
+        line-height: 100%; }
+      .app .sectionFive .right p {
+        font-style: normal;
+        font-weight: 300;
+        padding-left: 0%;
+        padding-right: 25%;
+        font-size: 17px;
+        line-height: 150%; }
+  .app .sectionSix {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #bdbcbc;
+    color: white; }
+    .app .sectionSix img {
+      height: inherit;
+      width: inherit; }
+    .app .sectionSix .container {
+      display: contents; }
+      .app .sectionSix .container .left {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex: 0.5;
+        position: absolute;
+        color: white; }
+        .app .sectionSix .container .left h1 {
+          transform: translate(3rem, 4rem);
+          position: absolute;
+          font-style: normal;
+          width: 55%;
+          overflow: hidden;
+          font-size: 70px;
+          font-weight: 300;
+          line-height: 100%; }
+      .app .sectionSix .container .center {
+        height: 100%;
+        width: 100%;
+        color: white;
+        position: absolute; }
+        .app .sectionSix .container .center p {
+          transform: translate(32rem, 20rem);
+          font-size: 25px;
+          width: 30%;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 130%; }
+      .app .sectionSix .container .right {
+        flex: 0.5;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: white; }
+        .app .sectionSix .container .right p {
+          transform: translate(57rem, 33rem);
+          width: 35%;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          line-height: 130%; }
+  .app .sectionSeven {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black; }
+    .app .sectionSeven h1 {
+      overflow: hidden;
+      padding: 2%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 100%; }
+    .app .sectionSeven .container {
+      flex-direction: row;
+      display: flex; }
+      .app .sectionSeven .container .left {
+        flex: 0.5;
+        width: 100%;
+        height: 100%; }
+        .app .sectionSeven .container .left p {
+          font-style: normal;
+          font-weight: 300;
+          padding-left: 19%;
+          width: 75%;
+          font-size: 20px;
+          padding-bottom: 20px;
+          line-height: 130%; }
+        .app .sectionSeven .container .left img {
+          height: 67%;
+          width: 72%;
+          margin-left: 19%; }
+      .app .sectionSeven .container .rigth {
+        width: 100%;
+        height: 100%;
+        flex: 0.5; }
+        .app .sectionSeven .container .rigth p {
+          font-style: normal;
+          font-weight: 300;
+          padding-left: 3%;
+          width: 78%;
+          font-size: 20px;
+          padding-bottom: 20px;
+          line-height: 130%; }
+        .app .sectionSeven .container .rigth img {
+          margin-left: 3%;
+          height: 76.5%;
+          width: 78%; }
+    .app .sectionSeven .containerTextDown {
+      color: white;
+      background-color: #000000;
+      overflow: hidden;
+      transform: translate(0px, -30%);
+      padding: 8px;
+      width: 80%;
+      height: 7%; }
+      .app .sectionSeven .containerTextDown h2 {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex; }
+  .app .sectionEight {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    background-color: #000000; }
+    .app .sectionEight .left {
+      flex: 0.5;
+      overflow: hidden;
+      width: 100%;
+      height: 100%; }
+      .app .sectionEight .left h1 {
+        transform: translate(10rem, 10rem);
+        overflow: hidden;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 88px;
+        line-height: 100%; }
+    .app .sectionEight .rigth {
+      flex: 0.9;
+      overflow: hidden;
+      width: 100%;
+      height: 100%; }
+      .app .sectionEight .rigth .container {
+        margin-top: 17%;
+        flex-direction: row; }
+        .app .sectionEight .rigth .container p {
+          width: 87%;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          margin-bottom: 5%;
+          margin-top: -8%;
+          padding-left: 4px;
+          padding-bottom: 2%;
+          border-bottom: 1px solid #404040; }
+        .app .sectionEight .rigth .container .text {
+          flex-direction: inherit;
+          display: flex;
+          justify-content: space-around;
+          padding-bottom: 1%;
+          margin-bottom: 5%;
+          margin-right: 13%;
+          border-bottom: 1px solid #404040; }
+          .app .sectionEight .rigth .container .text h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 130%; }
+          .app .sectionEight .rigth .container .text img {
+            width: 5%;
+            margin-left: 50%; }
+        .app .sectionEight .rigth .container .conatinerTextOne {
+          flex-direction: row;
+          display: flex; }
+        .app .sectionEight .rigth .container .conatinerTextTwo {
+          padding-bottom: 5% !important;
+          border: none; }
+        .app .sectionEight .rigth .container .conatinerTextThree {
+          flex-direction: row;
+          display: flex; }
+          .app .sectionEight .rigth .container .conatinerTextThree img {
+            margin-left: 45%; }
+        .app .sectionEight .rigth .container .conatinerTextFour {
+          flex-direction: row;
+          display: flex; }
+          .app .sectionEight .rigth .container .conatinerTextFour img {
+            margin-left: 48%; }
+
+/*# sourceMappingURL=output.css.map */
